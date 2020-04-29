@@ -1,0 +1,69 @@
+{
+   "objects": [ 
+    {
+        "id":1,
+        "name":"Tshirt",
+        "image":"customized-t-shirt.jpg"
+    },
+    {
+        "id":2,
+        "name":"Pen",
+        "image":"parker set.jpg"
+    },
+    {
+        "id":3,
+        "name":"Pencil",
+        "image":"apsara pencil.jpeg"
+    },
+    {
+        "id":4,
+        "name":"Bottle",
+        "image":"bottles.jpg"
+    },
+    {
+        "id":5,
+        "name":"Bags",
+        "image":"bags.jpg"
+    },
+    {
+        "id":6,
+        "name":"canvas",
+        "image":"canvas.jpg"
+    },
+    {
+        "id":7,
+        "name":"Bags",
+        "image":"bags-2.jpg"
+    },
+    {
+        "id":8,
+        "name":"Cobra file",
+        "image":"cobra file.jpg"
+    },
+    {
+        "id":9,
+        "name":"Customized Pens",
+        "image":"customize pen.jpg"
+    },
+    {
+        "id":10,
+        "name":"Customzied Tshirt",
+        "image":"customized t-shirt-2.jpg"
+    },
+    {
+        "id":11,
+        "name":"emy bags",
+        "image":"emy bags.jpg"
+    },
+    {
+        "id":12,
+        "name":"Exercise Notebook",
+        "image":"excercise notbook.jpg"
+    },
+    {
+        "id":13,
+        "name":"gift set",
+        "image":"gift sets.jpg"
+    }
+    ]
+}
