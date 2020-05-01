@@ -3,66 +3,79 @@
     {
         "id":1,
         "name":"Tshirt",
+        "category": "tshirt",
         "image":"customized-t-shirt.jpg"
     },
     {
         "id":2,
         "name":"Pen",
+        "category": "stationery",
         "image":"parker set.jpg"
     },
     {
         "id":3,
         "name":"Pencil",
+        "category": "stationery",
         "image":"apsara pencil.jpeg"
     },
     {
         "id":4,
         "name":"Bottle",
+        "category": "bottles",
         "image":"bottles.jpg"
     },
     {
         "id":5,
         "name":"Bags",
+        "category": "bags",
         "image":"bags.jpg"
     },
     {
         "id":6,
         "name":"canvas",
+        "category": "stationery",
         "image":"canvas.jpg"
     },
     {
         "id":7,
         "name":"Bags",
+        "category": "bags",
         "image":"bags-2.jpg"
     },
     {
         "id":8,
         "name":"Cobra file",
+        "category": "stationery",
         "image":"cobra file.jpg"
     },
     {
         "id":9,
         "name":"Customized Pens",
+        "category": "stationery",
         "image":"customize pen.jpg"
     },
     {
         "id":10,
         "name":"Customzied Tshirt",
+        "category": "tshirt",
         "image":"customized t-shirt-2.jpg"
     },
     {
         "id":11,
         "name":"emy bags",
+        "category": "bags",
         "image":"emy bags.jpg"
     },
     {
         "id":12,
         "name":"Exercise Notebook",
+        "category": "stationery",
         "image":"excercise notbook.jpg"
     },
     {
         "id":13,
         "name":"gift set",
+        "category": "gifts",
         "image":"gift sets.jpg"
     }
     ]

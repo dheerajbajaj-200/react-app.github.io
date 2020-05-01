@@ -6,8 +6,12 @@ MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
 import { BrowserRouter as Router } from 'react-router-dom';
 
 class NavbarPage extends Component {
-state = {
-  isOpen: false
+  constructor(props){
+    super(props);
+
+  this.state = {
+    isOpen: false
+  }
 };
 
 toggleCollapse = () => {
@@ -50,7 +54,7 @@ render() {
             <MDBNavItem>
               <MDBFormInline waves>
                 <div className="md-form my-0">
-                  <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
+                  <input onChange={this.props.handleInput} className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
                 </div>
               </MDBFormInline>
             </MDBNavItem>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './Whitelinestyle.css';
 import 'tachyons';
@@ -9,44 +9,106 @@ import FooterPage from './Footer';
 import AboutPageCard from  './AboutPageCard';
 import ContactPage from './ContactPage';
 import NavBarPage from './NavBarPage';
+import WhitelineObjectList from './WhitelineObjectList';
 
 const objects = data.objects;
-const Whiteline = (props) => {
+
+class Whiteline extends Component{
+
+    constructor(props){
+        super(props);
+        this.state = {
+            objects : objects,
+            search: ''
+        }
+    }
 
 
-    const object1 = objects.map( (object)=>{
+    handleInput = (e) => {
+        console.log(e.target.value)
+        this.setState({search: e.target.value})
 
-        return  <WhitelineObject id={object.id}
-                         name={object.name}
-                        image={object.image}/>
+    }
 
-    } )
 
-    return (
-        <BrowserRouter>
-    <div>
+    render() {
+
+        let filteredObjects = this.state.objects.filter((object) => {
+            return ( object.name.toLowerCase().includes(this.state.search.toLowerCase()) || 
+            object.category.toLowerCase().includes(this.state.search.toLowerCase()))
+        })
         
-    <div className="mainpage">
-    <NavBarPage/>
-    <h1 className=" tc">Welcome to whiteline</h1>
-   
-    {object1}
+        return (
+                <BrowserRouter>
+            <div>
+                
+            <div className="mainpage">
+            <NavBarPage handleInput={this.handleInput}/>
+            <h1 className=" tc">Welcome to whiteline</h1>
+        
+            <WhitelineObjectList objects={filteredObjects}/>
 
-    {/* <Switch>
-    
-    <Route path="/about" component={AboutPageCard}/>
-    <Route path="/contact" component={ContactPage}/>
-    </Switch> */}
-  
-    <AboutPageCard/>
-    <ContactPage/>
+            {/* <Switch>
+            
+            <Route path="/about" component={AboutPageCard}/>
+            <Route path="/contact" component={ContactPage}/>
+            </Switch> */}
+        
+            <AboutPageCard/>
+            <ContactPage/>
 
-    <FooterPage/>
-    </div>
+            <FooterPage/>
+            </div>
 
-    
-    </div>
-    </BrowserRouter>
-    )
+            
+            </div>
+            </BrowserRouter>
+        );
+    }
+
 }
+
+// const handleInput = (e) => {
+//         console.log(e.target.value)
+//         this.setState({search: e.target.value})
+//     }
+// const Whiteline = (props) => {
+
+
+//     const object1 = objects.map( (object)=>{
+
+//         return  <WhitelineObject id={object.id}
+//                          name={object.name}
+//                         image={object.image}/>
+
+//     } )
+
+
+//     return (
+//         <BrowserRouter>
+//     <div>
+        
+//     <div className="mainpage">
+//     <NavBarPage handleInput={handleInput}/>
+//     <h1 className=" tc">Welcome to whiteline</h1>
+   
+//     {object1}
+
+//     {/* <Switch>
+    
+//     <Route path="/about" component={AboutPageCard}/>
+//     <Route path="/contact" component={ContactPage}/>
+//     </Switch> */}
+  
+//     <AboutPageCard/>
+//     <ContactPage/>
+
+//     <FooterPage/>
+//     </div>
+
+    
+//     </div>
+//     </BrowserRouter>
+//     )
+// }
 export default Whiteline;
