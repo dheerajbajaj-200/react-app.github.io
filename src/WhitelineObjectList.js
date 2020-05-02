@@ -12,7 +12,7 @@ function WhitelineObjectList(props){
         } )
 
         return (
-            <div>
+            <div id="main">
                 {wobjects}
             </div>
         )

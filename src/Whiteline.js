@@ -10,6 +10,7 @@ import AboutPageCard from  './AboutPageCard';
 import ContactPage from './ContactPage';
 import NavBarPage from './NavBarPage';
 import WhitelineObjectList from './WhitelineObjectList';
+import { CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 
 const objects = data.objects;
 
@@ -53,9 +54,19 @@ class Whiteline extends Component{
             <Route path="/about" component={AboutPageCard}/>
             <Route path="/contact" component={ContactPage}/>
             </Switch> */}
+
+        {/* <Switch>
+        <Route exact path="/" component={WhitelineObjectList} />
+        <Route path="about-us" component={AboutPageCard} />
+        <Route path="contact" component={ContactPage} /> */}
+        {/* <Route exact path="/sports/:slug" component={SingleSport} /> */}
         
-            <AboutPageCard/>
-            <ContactPage/>
+        
+        {/* </Switch> */}
+        
+            <AboutPageCard />
+            <ContactPage />
+            <ScrollUpButton />
 
             <FooterPage/>
             </div>

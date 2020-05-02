@@ -3,6 +3,7 @@ import { MDBCard, MDBCardTitle, MDBBtn, MDBRow, MDBCol, MDBIcon } from 'mdbreact
 
 const AboutPageCard = () => {
   return (
+    <div id="about-us">
     <MDBRow>
       <MDBCol>
         <MDBCard
@@ -32,6 +33,7 @@ const AboutPageCard = () => {
       </MDBCol>
 
     </MDBRow>
+    </div>
   )
 }
 
